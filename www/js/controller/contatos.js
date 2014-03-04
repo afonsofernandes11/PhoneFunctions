@@ -11,6 +11,8 @@
 
             var htmlContats = ''
 
+            console.log(contacts);
+
             for (var i = 0; i < contacts.length; i++) {
                 if (contacts[i].phoneNumbers != null) {
                     htmlContats += '<li><a href="tel:' + contacts[i].phoneNumbers[0] + '">' + contacts[i].displayName + '</a></li>';
