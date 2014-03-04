@@ -22,6 +22,7 @@ $(document).ready(function () {
         
         $.get('view/' + url + '.html', function (page) {
             $('#container').html(page);
+            $.getScript('js/controller/' + url + '.js', true);
         });    
     }
 
