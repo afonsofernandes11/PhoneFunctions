@@ -32,3 +32,18 @@ header{
     background-color:#fff;
     overflow:scroll;
 }
+
+.navigate{
+    display:block;
+    color: #808080;
+    text-decoration:none;
+}
+
+.contact-list li {
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.contact-list li a {
+    display:block;
+}

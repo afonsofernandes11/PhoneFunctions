@@ -12,7 +12,7 @@
             var htmlContats = ''
 
             for (var i = 0; i < contacts.length; i++) {
-                htmlContats += '<li>' + contacts[i].displayName + '</li>';
+                htmlContats += '<li><a href="tel:' + contacts[i].phoneNumbers + '">' + contacts[i].displayName + '</a></li>';
             };
 
             $("#contact-list").html(htmlContats);
@@ -27,7 +27,7 @@
         options.filter = $('#txtSearchContacts').val();
         options.multiple = true;
 
-        fields = ["displayName", "name"];
+        fields = ["displayName", "name", "phoneNumbers"];
 
         navigator.contacts.find(fields, onSuccess, onError, options);
     }
