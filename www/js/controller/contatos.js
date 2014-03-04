@@ -12,7 +12,9 @@
             var htmlContats = ''
 
             for (var i = 0; i < contacts.length; i++) {
-                htmlContats += '<li><a href="tel:' + contacts[i].phoneNumbers + '">' + contacts[i].displayName + '</a></li>';
+                if (contacts[i].phoneNumbers != null) {
+                    htmlContats += '<li><a href="tel:' + contacts[i].phoneNumbers[0] + '">' + contacts[i].displayName + '</a></li>';
+                }
             };
 
             $("#contact-list").html(htmlContats);
