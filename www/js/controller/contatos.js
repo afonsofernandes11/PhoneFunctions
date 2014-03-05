@@ -9,9 +9,7 @@
 
         function onSuccess(contacts) {
 
-            var htmlContats = ''
-
-            console.log(contacts);
+            var htmlContats = '';
 
             for (var i = 0; i < contacts.length; i++) {
                 if (contacts[i].phoneNumbers != null) {
